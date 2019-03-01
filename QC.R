@@ -34,7 +34,7 @@ rawData_aerobic = rawData[,aerobic_index]
 rawData_Anaerobic = rawData[,anaerobic_index]
 rawData_Anaerobic_Nitrate = rawData[,Anaerobic_Nitrate_index]
 
-################# QC
+################# QC ##
 
 l <- list(rawData_aerobic, rawData_Anaerobic, rawData_Anaerobic_Nitrate)
 l.t <- sapply(1:length(l), function(i) as.data.frame(unlist(as.data.frame(t(l[[i]])) ) ) , simplify = F)

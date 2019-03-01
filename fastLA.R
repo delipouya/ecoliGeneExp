@@ -1,8 +1,8 @@
-source('QC.R')
+source('QC.R') 
 source('difExpAnalysis.R')
 
 #### fastLA Analysis 
-# input > col:gene , row:observations 
+# input > col:gene , row:observations #
 allowWGCNAThreads()
 data <- t(merged)
 selected <- c(rownames(ex.up),rownames(ex.down))

@@ -1,5 +1,5 @@
 source('QC.R')
-#### Differential expression analysis
+#### Differential expression analysis #
 gr <- factor(grm)
 t.merged <- data.frame(t(merged))
 t.merged$description <- gr
